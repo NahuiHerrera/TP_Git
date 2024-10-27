@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Juegos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Juegos</h1>
+        <button id="memoryGameBtn">Juego de Memoria</button>
+        <button id="hangmanGameBtn">Ahorcado</button>
+    </div>
+
+    <script>
+        // Navegar a las diferentes páginas de juego
+        document.getElementById('memoryGameBtn').addEventListener('click', function() {
+            window.location.href = 'memory.html'; // Redirige al Juego de Memoria
+        });
+
+        document.getElementById('hangmanGameBtn').addEventListener('click', function() {
+            window.location.href = 'hangman.html'; // Redirige al Juego de Ahorcado
+        });
+    </script>
+</body>
+</html>
