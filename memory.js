@@ -92,3 +92,4 @@ function endGame() {
     document.getElementById('resetBtn').style.display = 'inline-block';
     document.getElementById('resetBtn').addEventListener('click', startGame);
 }
+
