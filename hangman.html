@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego de Ahorcado</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hangmanstyle.css">
 </head>
 <body>
     <div class="container" id="word-input-section">
@@ -12,6 +12,7 @@
         <label for="wordInput">Ingresa la palabra a adivinar:</label>
         <input type="password" id="wordInput" placeholder="Escribe una palabra">
         <button id="startGameBtn">Iniciar Juego</button>
+        <button id="mainMenuBtn" onclick="window.location.href='index.html'">Volver al Menú Principal</button>
     </div>
 
     <div class="container" id="game-section" style="display: none;">
@@ -25,7 +26,7 @@
     </div>
     
 
-    <button onclick="window.location.href='index.html'">Volver al Menú Principal</button>
+    
 
     <script src="hangman.js"></script>
 </body>

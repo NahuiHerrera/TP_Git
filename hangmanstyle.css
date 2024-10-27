@@ -1,0 +1,115 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Asegúrate de que todo esté alineado en columna en el contenedor */
+.container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente si es necesario */
+}
+
+#startGameBtn, #mainMenuBtn {
+    width: 100%; /* Asegura que ocupen todo el ancho disponible */
+    margin-top: 10px; /* Deja un espacio arriba */
+}
+
+/* Títulos */
+h1 {
+    color: #444;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Input de palabra */
+#wordInput {
+    width: 80%; /* Ajusta el ancho para que quede centrado */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Evita que el padding afecte el ancho total */
+}
+/* Botón de inicio */
+#startGameBtn, #resetBtn, button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#startGameBtn:hover, #resetBtn:hover, button:hover {
+    background-color: #45a049;
+}
+
+/* Palabra oculta y letras incorrectas */
+#hiddenWord {
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+#wrongLetters {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+#remainingAttempts {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Mensajes de juego */
+#gameMessage {
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Teclado */
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 5px;
+    margin: 15px 0;
+}
+
+#keyboard button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#keyboard button:hover {
+    background-color: #2980b9;
+}
+
+#keyboard button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}

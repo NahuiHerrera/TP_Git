@@ -95,6 +95,7 @@ function resetGame() {
     wrongLetters = [];
     attempts = 6;
 
+    // Restablece el estado visual inicial
     document.getElementById('wordInput').value = '';
     document.getElementById('hiddenWord').textContent = '';
     document.getElementById('wrongLetters').textContent = '';
@@ -105,4 +106,13 @@ function resetGame() {
     // Mostrar de nuevo la sección de entrada de palabra
     document.getElementById('word-input-section').style.display = 'block';
     document.getElementById('game-section').style.display = 'none';
+
+    // Asegurarse de que los estilos iniciales estén correctos
+    const startGameBtn = document.getElementById('startGameBtn');
+    const mainMenuBtn = document.getElementById('mainMenuBtn');
+
+    // Restablece el estilo del botón Iniciar Juego y del botón Volver al Menú Principal
+    startGameBtn.style.display = 'block';
+    mainMenuBtn.style.display = 'block';
 }
+
