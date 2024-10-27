@@ -89,7 +89,7 @@ function endGame(won) {
 }
 
 function resetGame() {
-    // Reinicia el juego
+
     selectedWord = '';
     hiddenWordArray = [];
     wrongLetters = [];
